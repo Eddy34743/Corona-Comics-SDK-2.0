@@ -1,0 +1,35 @@
+-- build.settings
+
+settings =
+{
+	orientation =
+	{
+		default = "portrait",
+ 		content = "portrait",
+		supported = { "landscapeLeft", "landscapeRight", "portrait", "portraitUpsideDown" }
+	},
+
+	iphone =
+	{
+		plist=
+		{
+			MinimumOSVersion="4.0",
+			UIApplicationExitsOnSuspend = false,
+			UIStatusBarHidden = true,
+			UIAppFonts = {
+				"SF_Slapstick_Comic.ttf"
+			},
+			UIPrerenderedIcon = true,
+
+			CFBundleIconFile = "Icon.png",
+			CFBundleIconFiles = {
+							"Icon.png" , 
+							"Icon@2x.png" , 
+							"Icon-72.png" , 
+							"Icon-Small-50.png" , 
+							"Icon-Small.png" , 
+							"Icon-Small@2x.png"
+			},
+		},
+	},
+}
